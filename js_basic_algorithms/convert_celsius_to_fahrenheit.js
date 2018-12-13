@@ -8,13 +8,19 @@ temperature equivalent to the given Celsius temperature.
 Use the algorithm mentioned above to help convert the Celsius temperature to Fahrenheit.
 
 */
-
+// just get it to work
 function convertToF(celsius) {
-    let fahrenheit;
+    let fahrenheit = celsius * 9 / 5 + 32;
     return fahrenheit;
   }
   
   convertToF(30);
+
+// refactored
+
+const convertToF = celsius => celsius * 9 / 5 + 32;
+convertToF(-10);
+
 
 // test cases:
 convertToF(0) // should return a number
