@@ -22,6 +22,7 @@ For example: 5! = 1 * 2 * 3 * 4 * 5 = 120
     // For loop
     // array.prototype.reduce
 
+// RECURSION
     function factorialize(num) {
         if (num === 0)
         return 1;
@@ -32,24 +33,37 @@ For example: 5! = 1 * 2 * 3 * 4 * 5 = 120
       factorialize(5);
 
       /*
-            num   num === 0?  num * factioralize(num - 1)     return
-stack 1      5     false       5 * 4                           20
-stack 2      4     false       4 * 3                           15        
-stack 3      3     false       3 * 2                           6  
-stack 4      2     false       2 * 1                           2      
-stack 5      1     false       1 * 0                           0
-stack 6      0     true                                        1
+            num   num === 0?  return num * factioralize(num - 1)
+stack 1      5     false       5 * 4                          
+stack 2      4     false       4 * 3                                
+stack 3      3     false       3 * 2                            
+stack 4      2     false       2 * 1                                
+stack 5      1     false       1 * 0                           
+stack 6      0     true                                        
 
 // now we have our arguments for  the return value
 
-// Should start at 5 * nested value..
-1 * 1 = 1
-2 * 2 = 4
-3 * 6 = 18
-4 * 15 = 60
-5 * 20 = 100
-
+stack 6 returns 1
+stack 5 returns 1 * 1 = 1
+stack 4 returns 2 * 1 = 2
+stack 3 returns 3 * 2 = 6
+stack 2 returns 4 * 6 = 24
+original call - stack 1 returns 5 * 24 = 120
 */
+
+// FOR LOOP
+
+// Create a counter to add each loop to
+let counter = 0;
+
+for (let i = 5; i>=0; i--) {
+    debugger;
+    counter *= i;
+}
+console.log(counter);
+
+
+
 // tests
 
 factorialize(5) // should return a number.
