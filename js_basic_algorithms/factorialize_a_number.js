@@ -53,14 +53,29 @@ original call - stack 1 returns 5 * 24 = 120
 
 // FOR LOOP
 
-// Create a counter to add each loop to
-let counter = 0;
-
-for (let i = 5; i>=0; i--) {
-    debugger;
-    counter *= i;
+// still needs to be inside a function
+factorialize(num) {
+    // 1 is the factor of 0
+    if (num === 0)
+    return 1;
+    else {
+        // start multiplying num by its factors stating at 4 (num = 1)
+        for (let i = num - 1; i >= 1; i--) {
+            // reassign the result to num
+            num *= num * i;
+        }
+        return num;
+    }
 }
-console.log(counter);
+
+/*
+            num    i       i>=1?       num * i      
+round 1      5      4       true        5*4 // 20   
+round 2      20     3       true        20*3 // 60
+round 3      60     2       true        60*2 // 120
+round 4      120    1       false
+
+*/
 
 
 
