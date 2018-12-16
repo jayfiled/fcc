@@ -53,31 +53,56 @@ original call - stack 1 returns 5 * 24 = 120
 
 // FOR LOOP
 
+// Try 1
 // still needs to be inside a function
-factorialize(num) {
+function factorialize(num) {
     // 1 is the factor of 0
     if (num === 0)
     return 1;
     else {
         // start multiplying num by its factors stating at 4 (num = 1)
         for (let i = num - 1; i >= 1; i--) {
-            // reassign the result to num
-            num *= num * i;
+            // reassign the result to num // incorrect.  I wasn't reassigning.  I was adding AND reassigning
+            num += num * i;
         }
         return num;
     }
 }
 
 /*
-            num    i       i>=1?       num * i      
-round 1      5      4       true        5*4 // 20   
-round 2      20     3       true        20*3 // 60
-round 3      60     2       true        60*2 // 120
-round 4      120    1       false
+            num    i       i>=1?       num * i          num+= num * i
+round 1      5      4       true        5*4 // 20           5 + 20   
+round 2      25     3       true        25*3 // 75          25 + 75
+round 3      100    2       true        100*2 // 200         100 + 200 
+round 4      300    1       true        300*1 // 300        300 + 300
+return 600
 
 */
+// Try 2
 
+function factorialize(num) {
+    // 1 is the factor of 0
+    if (num === 0)
+    return 1;
+    else {
+        // start multiplying num by its factors stating at 4 (num = 1)
+        for (let i = num - 1; i >= 1; i--) {
+            // REALLY reassign the result to num
+            num = num * i;
+        }
+        return num;
+    }
+}
 
+/*
+            num    i       i>=1?       num * i          num+= num * i
+round 1      5      4       true        5*4 // 20           5 + 20   
+round 2      25     3       true        25*3 // 75          25 + 75
+round 3      100    2       true        100*2 // 200         100 + 200 
+round 4      300    1       true        300*1 // 300        300 + 300
+return 600
+
+*/
 
 // tests
 
