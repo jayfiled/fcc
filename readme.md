@@ -19,7 +19,7 @@ This repository contains my solved [freeCodeCamp](https://www.freecodecamp.org) 
 
 ## Responsive Web Design
 
-- [**Build a Tribute Page**](#)
+- [**Build a Tribute Page**](https://codepen.io/jayfiled/full/ZowvbG)
 
   [![](_assets/README/tribute_page.png)](#)
 
@@ -31,7 +31,7 @@ This repository contains my solved [freeCodeCamp](https://www.freecodecamp.org) 
 
   <sup>_#html, #css, #sass, #javascript, #jquery, #materialize_</sup>
 
-- [**Build A Product Landing Page**](#)
+- [**Build A Product Landing Page**](https://jayfiled.github.io/product-landing-page/)
 
   [![](_assets/README/landing_page.png)](#)
 
