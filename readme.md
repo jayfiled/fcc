@@ -29,13 +29,13 @@ This repository contains my solved [freeCodeCamp](https://www.freecodecamp.org) 
 
   [![](_assets/README/survey_form.png)](#)
 
-  <sup>_#html, #css, #sass, #javascript, #jquery, #materialize_</sup>
+  <sup>_#html, #css, #javascript, #jquery, #materialize_</sup>
 
 - [**Build A Product Landing Page**](https://jayfiled.github.io/product-landing-page/)
 
   [![](_assets/README/landing_page.png)](#)
 
-  <sup>_#html, #css, #sass, #javascript, #jquery, #bootstrap_</sup>
+  <sup>_#html, #css, #sass, #bootstrap_</sup>
 
 - [**Build a Technical Documentation Page**](#)
 
