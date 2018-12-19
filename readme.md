@@ -21,7 +21,7 @@ This repository contains my solved [freeCodeCamp](https://www.freecodecamp.org) 
 
 - [**Build a Tribute Page**](https://codepen.io/jayfiled/full/ZowvbG)
 
-  [![](_assets/README/tribute_page.png)](#)
+  [![](_assets/screens/Anpanman.png)](#)
 
   <sup>_#html, #css, #sass, #bootstrap_</sup>
 
@@ -33,7 +33,7 @@ This repository contains my solved [freeCodeCamp](https://www.freecodecamp.org) 
 
 - [**Build A Product Landing Page**](https://jayfiled.github.io/product-landing-page/)
 
-  [![](_assets/README/landing_page.png)](#)
+  [![](_assets/screens/product.png)](#)
 
   <sup>_#html, #css, #sass, #bootstrap_</sup>
 
