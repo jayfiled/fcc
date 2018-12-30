@@ -27,25 +27,25 @@ This repository contains my solved [freeCodeCamp](https://www.freecodecamp.org) 
 
 - [**Build a Survey Form**](#)
 
-  [![](_assets/README/survey_form.png)](#)
+  [![](_assets/screens/survey_form.png)](https://jayfiled.github.io/survey-form/)
 
-  <sup>_#html, #css, #javascript, #jquery, #materialize_</sup>
+  <sup>_#html, #css, #css grid, #css flexbox, #javascript_</sup>
 
 - [**Build A Product Landing Page**](https://jayfiled.github.io/product-landing-page/)
 
   [![](_assets/screens/product.png)](#)
 
-  <sup>_#html, #css, #sass, #bootstrap_</sup>
+  <sup>_#html, #css, #css grid, #css flexbox_</sup>
 
 - [**Build a Technical Documentation Page**](#)
 
-  [![](_assets/README/documentation_page.png)](#)
+  [![](_assets/screens/documentation_page.png)](#)
 
-  <sup>_#html, #css, #sass, #javascript, #jquery, #bootstrap_</sup>
+  <sup>_#html_</sup>
 
-- [**Build a Personal Portfolio Webpage**](#)
+- [**Build a Personal Portfolio Webpage**](https://jayfiled.github.io/portfolio/)
 
-  [![](_assets/README/personal_portfolio.png)](#)
+  [![](_assets/screens/portfolio.png)](#)
 
   <sup>_#html, #css, #sass, #javascript, #jquery, #bootstrap_</sup>
 
@@ -59,7 +59,7 @@ This repository contains my solved [freeCodeCamp](https://www.freecodecamp.org) 
 - [**Reverse a String**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/reverse_a_string.js)
 - [**Factorialize a Number**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/factorialize_a_number.js)
 - [**Find the Longest Word in a String**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/find_the_longest_word_in_a_string.js)
-- [**Return Largest Numbers in Arrays**](#)
+- [**Return Largest Numbers in Arrays**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/return_largest_number_in_arrays.js)
 - [**Confirm the Ending**](#)
 - [**Repeat a String Repeat a String**](#)
 - [**Truncate a String**](#)
