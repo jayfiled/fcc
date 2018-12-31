@@ -7,10 +7,12 @@ But for the purpose of this challenge, we would like you to use one of the JavaS
 */
 
 function confirmEnding(str, target) {
-    // "Never give up and good luck will find you."
-    // -- Falcor
-    return str;
-  }
+  const stringLength = str.length;
+  const targetLength = target.length;
+
+  const ending = str.split('').splice((stringLength - targetLength), targetLength).join('');
+    return target === ending ? true : false;
+}
   
   confirmEnding("Bastian", "n");
 
