@@ -3,8 +3,13 @@ Repeat a given string str (first argument) for num times (second argument). Retu
 */
 
 function repeatStringNumTimes(str, num) {
-    // repeat after me
-    return str;
+
+    let concatStr = ""
+
+    for (let i = 0; i < num; i++){
+        concatStr += str;
+    }
+    return concatStr;
   }
   
   repeatStringNumTimes("abc", 3);
