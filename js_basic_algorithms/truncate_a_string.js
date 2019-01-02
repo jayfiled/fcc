@@ -5,8 +5,10 @@ Truncate a string (first argument) if it is longer than the given maximum string
 */
 
 function truncateString(str, num) {
-    // Clear out that junk in your trunk
-    return str;
+    
+    let abbr = str.split('').splice(0, num).join('');
+	
+	return num >= str.length ? str : abbr + '...';    
   }
   
   truncateString("A-tisket a-tasket A green and yellow basket", 8);
