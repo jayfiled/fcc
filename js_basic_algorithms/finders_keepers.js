@@ -5,11 +5,12 @@ If no element passes the test, return undefined.
 */
 
 function findElement(arr, func) {
-    let num = 0;
-    return num;
-  }
-  
-  findElement([1, 2, 3, 4], num => num % 2 === 0);
+  let meetReqs = arr.filter(func);
+
+  return meetReqs[0];
+}
+
+findElement([1, 2, 3, 4], num => num % 2 === 0);
 
 
   // tests
