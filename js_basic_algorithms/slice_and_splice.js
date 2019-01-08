@@ -12,12 +12,15 @@ Return the resulting array. The input arrays should remain the same after the fu
 
 function frankenSplice(arr1, arr2, n) {
 
-  let splicedArr = arr1
-  .splice(0, arr1.length);
+let tempArr = [...arr1];
+let tempArr2 = [...arr2];
 
-  arr2.splice(n,0, ...splicedArr);
+  let splicedArr = tempArr
+  .splice(0, tempArr.length);
 
-return arr2;
+  tempArr2.splice(n,0, ...splicedArr);
+
+return tempArr2;
   // return arr2.slice(n, splicedArr);
 
 }
