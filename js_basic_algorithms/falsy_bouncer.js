@@ -7,12 +7,17 @@ Hint: Try converting each value to a Boolean.
 */
 
 function bouncer(arr) {
-    // Don't show a false ID to this bouncer.
-    return arr;
+
+    let onlyTruthy = arr.filter(element => {
+       if (element) 
+       return element;
+    })
+return onlyTruthy;
   }
   
   bouncer([7, "ate", "", false, 9]);
 
+  // notes: use filter to return all elements that resolve to falsy.
 
 
 // tests
