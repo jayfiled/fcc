@@ -68,8 +68,8 @@ This repository contains my solved [freeCodeCamp](https://www.freecodecamp.org) 
 - [ x ] [**Title Case a Sentence**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/title_case_a_sentence.js)
 - [ x ] [**Slice and Splice**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/slice_and_splice.js)
 - [ x ] [**Falsy Bouncer**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/falsy_bouncer.js)
-- [ x ] [**Where do I Belong**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/where_do_i_belong.js) <sup>~ working on ~</sup>
-- [  ] [**Mutations**]()
+- [ x ] [**Where do I Belong**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/where_do_i_belong.js)
+- [  ] [**Mutations**]() <sup>~ working on ~</sup>
 - [  ] [**Chunky Monkey**](#)
 
 ### Intermediate Algorithm Scripting

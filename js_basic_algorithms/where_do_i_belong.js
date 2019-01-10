@@ -12,11 +12,16 @@ Likewise, getIndexToIns([20,3,5], 19) should return 2 because once the array has
  */
 
 function getIndexToIns(arr, num) {
-    // Find my place in this sorted array.
-    return num;
-  }
+      if (!arr.includes(num)) {
+      arr.push(num);
+      }
+      
+    return arr.sort((a,b) => a < b ? -1 : 1).indexOf(num);
   
-  getIndexToIns([40, 60], 50);
+    }
+
+
+// Notes: forgot about the sort method sorting by the ASCII value, so 10 is less than 5 for example.
 
   // tests
 
