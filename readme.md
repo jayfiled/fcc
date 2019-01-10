@@ -8,7 +8,7 @@ This repository contains my solved [freeCodeCamp](https://www.freecodecamp.org) 
 
 ### freeCodeCamp Certifications
 
-- [x] [**Responsive Web Design**](https://github.com/jayfiled/ZeroToMasteryProjects)
+- [x] [**Responsive Web Design**](#responsive-web-design)
 - [ ] [**JavaScript Algorithms and Data Structures**](https://github.com/jayfiled/fcc/tree/master/js_basic_algorithms)
 - [ ] [Front End Libraries]
 - [ ] [Data Visualization]
