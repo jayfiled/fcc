@@ -9,10 +9,26 @@ Lastly, ["Alien", "line"], should return true because all of the letters in "lin
 */
 
 function mutation(arr) {
-    return arr;
+    const [ checkString, match ] = arr;
+    const splitCheck = checkString.split('');
+    const splitMatch = match.split('');
+// debugger;
+   return splitMatch.map(letter => letter);
+
   }
   
   mutation(["hello", "hey"]);
+
+  // Notes:
+
+  // make both elements lowercase
+  // make first element an array split by character
+  // make the second element an array split by character
+
+  // iterate over the first array and for each index, check to see if each item
+  // from the second array matches it.  If it return true, increment a counter
+  // by 1.
+  // if that counter matches the length of the second element, return true to the function.
 
   // tests
 
