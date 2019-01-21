@@ -69,8 +69,8 @@ This repository contains my solved [freeCodeCamp](https://www.freecodecamp.org) 
 - [ x ] [**Slice and Splice**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/slice_and_splice.js)
 - [ x ] [**Falsy Bouncer**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/falsy_bouncer.js)
 - [ x ] [**Where do I Belong**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/where_do_i_belong.js)
-- [  ] [**Mutations**]() <sup>~ working on ~</sup>
-- [  ] [**Chunky Monkey**](#)
+- [ x ] [**Mutations**]((https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/mutations.js)
+- [  ] [**Chunky Monkey**](#) <sup>~ working on ~</sup>
 
 ### Intermediate Algorithm Scripting
 

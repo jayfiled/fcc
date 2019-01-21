@@ -8,22 +8,31 @@ The arguments ["hello", "hey"] should return false because the string "hello" do
 Lastly, ["Alien", "line"], should return true because all of the letters in "line" are present in "Alien".
 */
 
+// Try 1 - works on all tests except where the string has two letters.
+
 function mutation(arr) {
 
   const [ firstString, secondString ] = arr;
 
-  const splitFirst = firstString.split('');
-  const splitSecond = secondString.split('');
+  const splitFirst = firstString.toLowerCase().split('');
+  const splitSecond = secondString.toLowerCase().split('');
 
-  return splitFirst.reduce((acc, el, i) => {
+  const totalOfMatchedLetters = splitFirst.reduce((acc, el, i) => {
+    // is el === to splitSecond[0],[1] or [2]
+    
+    const innerLoop = splitSecond.reduce((inc, index) => {
+      // console.log('first element and array: ', el, splitFirst, 'second element and array array: ', index, splitSecond);
+      return index === el ? inc += 1 : inc += 0
+    
+    },0)
+    
+    return acc += innerLoop;
 
-    return el === splitSecond[i] ? acc += 1 : acc += 0;
+  },0);
 
-  },0)
+return totalOfMatchedLetters === secondString.length ? true : false;
 
 };
-  
-  mutation(["hello", "hey"]); // returns 2... ** debugger to see what is missing.
 
   // Notes:
 
@@ -39,6 +48,29 @@ function mutation(arr) {
   // elements match it.  If so, return 1, if not return 0.
 
   // if  the total number returned matches the second string's length, then the algorithm returns true.
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+// Try 2 - complete - got a hint from FCC to use string.indexOf() and if everything is lowercase it is easier to compare.
+
+function mutation(arr) {
+
+  const lowerArr = arr.map(el => el.toLowerCase());
+
+  const [ firstString, secondString ] = lowerArr;
+
+  const splitSecond = secondString.split('');
+
+  // indexOf returns -1 to the array if the argument is not in the string
+  const checkForTruthy = splitSecond.map(el => {
+    return firstString.indexOf(el)
+  })
+
+  // check if the array contains a -1.  If it does then the function returns true, else false.
+return checkForTruthy.includes(-1) === true ? false : true;
+
+};
+
+
 
 
   // tests
