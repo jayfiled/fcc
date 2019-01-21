@@ -9,26 +9,37 @@ Lastly, ["Alien", "line"], should return true because all of the letters in "lin
 */
 
 function mutation(arr) {
-    const [ checkString, match ] = arr;
-    const splitCheck = checkString.split('');
-    const splitMatch = match.split('');
-// debugger;
-   return splitMatch.map(letter => letter);
 
-  }
+  const [ firstString, secondString ] = arr;
+
+  const splitFirst = firstString.split('');
+  const splitSecond = secondString.split('');
+
+  return splitFirst.reduce((acc, el, i) => {
+
+    return el === splitSecond[i] ? acc += 1 : acc += 0;
+
+  },0)
+
+};
   
-  mutation(["hello", "hey"]);
+  mutation(["hello", "hey"]); // returns 2... ** debugger to see what is missing.
 
   // Notes:
 
-  // make both elements lowercase
-  // make first element an array split by character
-  // make the second element an array split by character
+  // The Function takes 1 array, with two elements.
 
-  // iterate over the first array and for each index, check to see if each item
-  // from the second array matches it.  If it return true, increment a counter
-  // by 1.
-  // if that counter matches the length of the second element, return true to the function.
+  // Split the elements up into separate strings
+
+  // make both strings lowercase
+
+  // make both strings an array where each element is a letter from the string
+
+  // loop over the first array and on each element, check to see if any of the second array's
+  // elements match it.  If so, return 1, if not return 0.
+
+  // if  the total number returned matches the second string's length, then the algorithm returns true.
+
 
   // tests
 
