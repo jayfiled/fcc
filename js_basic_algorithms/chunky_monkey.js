@@ -4,16 +4,25 @@ length of size (second argument) and returns them as a two-dimensional array.
  */
 
 function chunkArrayInGroups(arr, size) {
+    const arrCopy = [...arr];
     let arra = [];
-    for (let i = 0; size >= i; i++) {
-        console.log(i)
-        //  arra[i] = arr.splice(0,size);
-        //  console.log(arra0, arra1, arra2);
+    for (let i = 0; (arr.length / size) > i; i++) {
+        // debugger;
+        arra[i] = arrCopy.splice(0,size);
     }
-
+    
+    if (arrCopy.length === 0) {
+    return arra;
+    }
+    else 
+    {
+        arra.push(arrCopy);
+        return arra;
+    }
   }
   
   chunkArrayInGroups(["a", "b", "c", "d"], 2);
+
 
 // Plan:
   // Use a 'for loop' to splice the input size from the array and return it to a variable
