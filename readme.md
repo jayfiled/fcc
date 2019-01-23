@@ -55,25 +55,25 @@ This repository contains my solved [freeCodeCamp](https://www.freecodecamp.org) 
 
 ### Basic Algorithm Scripting
 
-- [ x ] [**Convert Celsius to Fahrenheit**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/convert_celsius_to_fahrenheit.js)
-- [ x ] [**Reverse a String**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/reverse_a_string.js)
-- [ x ] [**Factorialize a Number**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/factorialize_a_number.js)
-- [ x ] [**Find the Longest Word in a String**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/find_the_longest_word_in_a_string.js)
-- [ x ] [**Return Largest Numbers in Arrays**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/return_largest_number_in_arrays.js)
-- [ x ] [**Confirm the Ending**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/confirm_the_ending.js)
-- [ x ] [**Repeat a String Repeat a String**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/repeat_a_string_repeat_a_string.js)
-- [ x ] [**Truncate a String**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/truncate_a_string.js)
-- [ x ] [**Finders Keepers**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/finders_keepers.js)
-- [ x ] [**Boo who**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/boo_who.js)
-- [ x ] [**Title Case a Sentence**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/title_case_a_sentence.js)
-- [ x ] [**Slice and Splice**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/slice_and_splice.js)
-- [ x ] [**Falsy Bouncer**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/falsy_bouncer.js)
-- [ x ] [**Where do I Belong**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/where_do_i_belong.js)
-- [ x ] [**Mutations**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/mutations.js)
-- [ x ] [**Chunky Monkey**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/chunky_monkey.js) 
+- [x] [**Convert Celsius to Fahrenheit**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/convert_celsius_to_fahrenheit.js)
+- [x] [**Reverse a String**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/reverse_a_string.js)
+- [x] [**Factorialize a Number**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/factorialize_a_number.js)
+- [x] [**Find the Longest Word in a String**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/find_the_longest_word_in_a_string.js)
+- [x] [**Return Largest Numbers in Arrays**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/return_largest_number_in_arrays.js)
+- [x] [**Confirm the Ending**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/confirm_the_ending.js)
+- [x] [**Repeat a String Repeat a String**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/repeat_a_string_repeat_a_string.js)
+- [x] [**Truncate a String**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/truncate_a_string.js)
+- [x] [**Finders Keepers**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/finders_keepers.js)
+- [x] [**Boo who**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/boo_who.js)
+- [x] [**Title Case a Sentence**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/title_case_a_sentence.js)
+- [x] [**Slice and Splice**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/slice_and_splice.js)
+- [x] [**Falsy Bouncer**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/falsy_bouncer.js)
+- [x] [**Where do I Belong**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/where_do_i_belong.js)
+- [x] [**Mutations**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/mutations.js)
+- [x] [**Chunky Monkey**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/chunky_monkey.js) 
 
 ### Intermediate Algorithm Scripting
-- [  ] [**Sum all Numbers in a range**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/sum_all_numbers_in_a_range.js) <sup>~ working on ~</sup>
+- [ ] [**Sum all Numbers in a range**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/sum_all_numbers_in_a_range.js) <sup>~ working on ~</sup>
 
 
 
