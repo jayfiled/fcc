@@ -20,13 +20,16 @@ function sumAll(arr) {
   function sumAll(arr) {
     let [first, second] = arr;
 
-    const loopThisManyTimes = first + second;
+	const largerInput = first > second ? first : second;
+	const smallerInput = first < second ? first : second;
+
+    const loopThisManyTimes = largerInput - smallerInput;
 
     const saveBetweenNumbersHere = [];
 
-    // i === 2 because we want to increment or decrement a number based on how many
+    // i === 1 because we want to increment or decrement a number based on how many
     // numbers are between the two inputs, not including them.
-    for (let i = 3; i < loopThisManyTimes; i++) {
+    for (let i = 1; i < loopThisManyTimes; i++) {
       if (first < second) {
         first++
         saveBetweenNumbersHere.push(first);
@@ -37,8 +40,7 @@ function sumAll(arr) {
       }
     }
 
-    return first + second + saveBetweenNumbersHere.reduce((acc, el) => acc + el);
-// console.log(saveBetweenNumbersHere)
+    return arr[0] + arr[1] + saveBetweenNumbersHere.reduce((acc, el) => acc + el);
   }
   
   sumAll([1, 4]);
