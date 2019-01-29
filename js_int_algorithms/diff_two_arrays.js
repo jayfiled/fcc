@@ -1,19 +1,31 @@
 /* 
 Compare two arrays and return a new array with any items only found in one of the two given arrays, but not both. In other words, return the symmetric difference of the two arrays.
 
-Remember to use Read-Search-Ask if you get stuck. Try to pair program. Write your own code.
-
 Note
 You can return the array with its elements in any order.
  */
 
 function diffArray(arr1, arr2) {
-    var newArr = [];
-    // Same, same; but different.
-    return newArr;
+    const newArr = [...arr1, ...arr2];
+    return newArr.sort().reduce((acc, el) => {    // [1, 1, 2, 2, 3, 3, 4, 5, 5]
+      if (acc === el) {
+        return null;
+      }
+      
+      // acc !== el ? el : null; 
+      // acc = el;
+      console.log(`acc: ${acc}, element: ${el}`)
+    }, newArr[0])
+
+
+
+
   }
   
   diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+
+  // Notes:
+  // Flatten the array, sort and filter out the only entry without a duplicate entry
 
 diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]) // should return an array.
 ["diorite", "andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"] //  should return ["pink wool"].
