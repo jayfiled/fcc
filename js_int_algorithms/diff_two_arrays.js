@@ -6,26 +6,19 @@ You can return the array with its elements in any order.
  */
 
 function diffArray(arr1, arr2) {
-    const newArr = [...arr1, ...arr2];
-    return newArr.sort().reduce((acc, el) => {    // [1, 1, 2, 2, 3, 3, 4, 5, 5]
-      if (acc === el) {
-        return null;
-      }
-      
-      // acc !== el ? el : null; 
-      // acc = el;
-      console.log(`acc: ${acc}, element: ${el}`)
-    }, newArr[0])
+  const newArr = [...arr1, ...arr2]; // [1, 1, 2, 2, 3, 3, 4, 5, 5]
+  newArr.sort();
+  return newArr.filter((el, i) => {
+    newArr.indexOf(el + 1) === i+1, el+1;
+  })
 
+}
 
-
-
-  }
-  
-  diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
 
   // Notes:
   // Flatten the array, sort and filter out the only entry without a duplicate entry
+  // Check if the next item in the index matches the current one, if it doesn't return the next one... should work for numbers.. strings maybe not.
 
 diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]) // should return an array.
 ["diorite", "andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"] //  should return ["pink wool"].
