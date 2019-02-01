@@ -8,8 +8,9 @@ You can return the array with its elements in any order.
 function diffArray(arr1, arr2) {
   const newArr = [...arr1, ...arr2]; // [1, 1, 2, 2, 3, 3, 4, 5, 5]
   newArr.sort();
+	
   return newArr.filter((el, i) => {
-    newArr.indexOf(el + 1) === i+1, el+1;
+	return el === newArr[i+1];
   })
 
 }
