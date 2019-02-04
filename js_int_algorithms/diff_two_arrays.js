@@ -21,6 +21,24 @@ diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
   // Flatten the array, sort and filter out the only entry without a duplicate entry
   // Check if the next item in the index matches the current one, if it doesn't return the next one... should work for numbers.. strings maybe not.
 
+// Got a hint from the fcc website to use indexOf
+
+  function diffArray(arr1, arr2) {
+    const filteredArr1 = arr1.filter(value => arr2.indexOf(value) === -1);
+
+    //console.log(filteredArr1);
+
+    const filteredArr2 = arr2.filter(value => arr1.indexOf(value) === -1);
+
+   // console.log(filteredArr2);
+
+    return [...filteredArr1, ...filteredArr2];
+  
+  }
+  
+  diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+
+
 diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]) // should return an array.
 ["diorite", "andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"] //  should return ["pink wool"].
 ["diorite", "andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"] // should return an array with one item.
