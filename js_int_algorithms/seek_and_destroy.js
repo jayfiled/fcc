@@ -7,11 +7,21 @@ You have to use the arguments object.
  */
 
 function destroyer(arr) {
-    // Remove all the values
-    return arr;
+    
+ 
+
+
   }
   
   destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+
+// Notes:
+  // the arguments object holds the arguments stored as key:value pairs starting at 0 as the first key.
+  // create a new copy of the arguments object to mutate
+  // iterate over the object using for-in 
+  // make an array from the first element and another one from the remaining element, splice and spread 
+  
+
 
 
 destroyer([1, 2, 3, 1, 2, 3], 2, 3) // should return [1, 1].
