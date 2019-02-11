@@ -8,41 +8,17 @@ You have to use the arguments object.
 
 function destroyer(arr) {
     
- console.log(Object.entries(arguments));
-
-
-
- Object.entries(arguments).map((el,i) => {
-   el.splice(0,1);
-    
-  let arr[i] = el;
-
- })
-
-
-  }
+  const makeArray = [...arguments];
   
-  destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+  checkArgs = makeArray.splice(0,1);
 
-  /* Object.entries(argument) returns:
+	
+  
+  return arr.filter(el => makeArray.indexOf(el) === -1);
 
-0: Array [ "0", (6) […] ]
-​
-1: Array [ "1", 2 ]
-​
-2: Array [ "2", 3 ]
-​
-*/
-
-/* Argumnets object looks like this:
-   ​
-0: Array(6) [ 1, 2, 3, … ]
-​
-1: 2
-​
-2: 3
-
-*/
+}
+    
+    destroyer([1, 2, 3, 1, 2, 3], 2, 3);
 
 // Notes:
   // the arguments object holds the arguments stored as key:value pairs starting at 0 as the first key.
