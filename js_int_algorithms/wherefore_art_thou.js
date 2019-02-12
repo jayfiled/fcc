@@ -17,13 +17,33 @@ function whatIsInAName(collection, source) {
     var arr = [];
     // Only change code below this line
     
+    var newColl = collection.filter(el => {
+      // if any of the properties in el matches
+      // source, then return true
+
+      // need to extract the key values into something iterable
+      // to compare
+
+      let arr = (Object.entries(el)); // [] -> [] -> key values
+      let spreadArr = [...arr[0]] // brings the key values one level higher
+      
+      // do same with source, compare spreadArr and if match either, then return true
+
+    })
     
+
     // Only change code above this line
-    return arr;
+    // return arr;
   }
   
   whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
 
+  /* Notes:
+  I need to iterate over the array.  On each iteration I need to check if the key value pair from the source object 
+  matches the key value pair from each element.
+  I can create a new array with filter as filter will return the whole element if the condition resolves to true.
+
+*/
   //Tests
 
 whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" }) // should return [{ first: "Tybalt", last: "Capulet" }].
