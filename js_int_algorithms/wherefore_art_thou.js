@@ -14,7 +14,7 @@ For example, if the first argument is [{ first: "Romeo", last: "Montague" },
 
 function whatIsInAName(collection, source) {
     // What's in a name?
-    var arr = [];
+    var arr = Object.entries(source);
     // Only change code below this line
     
     var newColl = collection.filter(el => {
@@ -24,8 +24,16 @@ function whatIsInAName(collection, source) {
       // need to extract the key values into something iterable
       // to compare
 
-      let arr = (Object.entries(el)); // [] -> [] -> key values
-      let spreadArr = [...arr[0]] // brings the key values one level higher
+      let insideArr = (Object.entries(el)); // [] -> [] -> key values 
+      /*
+      (2) [Array(2), Array(2)]
+      0: (2) ["first", "Romeo"]
+      1: (2) ["last", "Montague"]
+      */
+      
+      if (arr[0] || arr[1] === insideArr[0] || insideArr[1] ) {
+        return true;
+      }
       
       // do same with source, compare spreadArr and if match either, then return true
 

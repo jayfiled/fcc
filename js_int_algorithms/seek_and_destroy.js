@@ -12,8 +12,6 @@ function destroyer(arr) {
   
   const checkArgs = makeArray.splice(0,1);
 
-	
-  
   return arr.filter(el => makeArray.indexOf(el) === -1);
 
 }
