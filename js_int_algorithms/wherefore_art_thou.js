@@ -12,6 +12,8 @@ For example, if the first argument is [{ first: "Romeo", last: "Montague" },
 
  */
 
+// Failed first attempt
+
 function whatIsInAName(collection, source) {
     // What's in a name?
     var arr = Object.entries(source);
@@ -31,7 +33,7 @@ function whatIsInAName(collection, source) {
       1: (2) ["last", "Montague"]
       */
       
-      if (arr[0] || arr[1] === insideArr[0] || insideArr[1] ) {
+      if (arr[0][0] === insideArr[0][0] || insideArr[0][1] ) {
         return true;
       }
       
@@ -39,7 +41,7 @@ function whatIsInAName(collection, source) {
 
     })
     
-
+return insideArr;
     // Only change code above this line
     // return arr;
   }
@@ -50,8 +52,26 @@ function whatIsInAName(collection, source) {
   I need to iterate over the array.  On each iteration I need to check if the key value pair from the source object 
   matches the key value pair from each element.
   I can create a new array with filter as filter will return the whole element if the condition resolves to true.
-
 */
+
+// Successful attempt after getting some hints about Array.prototype.every() && Object.hasOwnValue
+
+function where(collection, source) {
+  var arr = [];
+  var keys = Object.keys(source);
+  // Filter array and remove the ones that do not have the keys from source.
+  arr = collection.filter(function(obj) {
+    //Use the Array method every() instead of a for loop to check for every key from source.
+    return keys.every(function(key) {
+      // Check if the object has the property and the same value.
+      return obj.hasOwnProperty(key) && obj[key] === source[key];
+    });
+  });
+
+  return arr;
+}
+
+
   //Tests
 
 whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" }) // should return [{ first: "Tybalt", last: "Capulet" }].
