@@ -5,16 +5,20 @@ length of size (second argument) and returns them as a two-dimensional array.
 
 function chunkArrayInGroups(arr, size) {
     const arrCopy = [...arr];
+
+    // This will be our 2D array - chunks go into this array to be returned 
     let arra = [];
+
+    // Only loop enough times as the length of the array permits
     for (let i = 0; (arr.length / size) > i; i++) {
-        // debugger;
         arra[i] = arrCopy.splice(0,size);
     }
     
+    // If everything has been removed from the original array, return the 2D array
     if (arrCopy.length === 0) {
     return arra;
     }
-    else 
+    else // if there was an element left in our original array copy, put it on the end of our 2D array and return it.
     {
         arra.push(arrCopy);
         return arra;

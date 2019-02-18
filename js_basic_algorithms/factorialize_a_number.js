@@ -85,7 +85,7 @@ function factorialize(num) {
     if (num === 0)
     return 1;
     else {
-        // start multiplying num by its factors stating at 4 (num = 1)
+        // start multiplying num by its factors starting at 4 (num = 1)
         for (let i = num - 1; i >= 1; i--) {
             // REALLY reassign the result to num
             num = num * i;
