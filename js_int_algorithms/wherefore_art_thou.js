@@ -56,7 +56,7 @@ return insideArr;
 
 // Successful attempt after getting some hints about Array.prototype.every() && Object.hasOwnValue
 
-function where(collection, source) {
+function whatIsInAName(collection, source) {
   var arr = [];
   var keys = Object.keys(source);
   // Filter array and remove the ones that do not have the keys from source.
@@ -70,6 +70,8 @@ function where(collection, source) {
 
   return arr;
 }
+
+whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
 
 
   //Tests
