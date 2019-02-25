@@ -73,10 +73,12 @@ This repository contains my solved [freeCodeCamp](https://www.freecodecamp.org) 
 - [x] [**Chunky Monkey**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/chunky_monkey.js) 
 
 ### Intermediate Algorithm Scripting
-- [x] [**Sum all Numbers in a range**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/sum_all_numbers_in_a_range.js)
-- [x] [**Diff Two Arrays**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/diff_two_arrays.js)
-- [x] [**Seek and Destroy**](https://github.com/jayfiled/fcc/blob/master/js_basic_algorithms/seek_and_destroy.js)
-- [ ] [****]() <sup>~ working on ~</sup>
+- [x] [**Sum all Numbers in a range**](https://github.com/jayfiled/fcc/blob/master/js_int_algorithms/sum_all_numbers_in_a_range.js)
+- [x] [**Diff Two Arrays**](https://github.com/jayfiled/fcc/blob/master/js_int_algorithms/diff_two_arrays.js)
+- [x] [**Seek and Destroy**](https://github.com/jayfiled/fcc/blob/master/js_int_algorithms/seek_and_destroy.js)
+- [x] [**Wherefore art thou**](https://github.com/jayfiled/fcc/blob/master/js_int_algorithms/wherefore_art_thou.js) 
+- [ ] [**Spinal Tap Case**](https://github.com/jayfiled/fcc/blob/master/js_int_algorithms/spinal_tap_case.js) <sup>~ working on ~</sup> 
+
 
 
 
